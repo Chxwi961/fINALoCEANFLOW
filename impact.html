@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OceanFlow | Impact Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand"><span class="brand-mark"></span><span>OceanFlow</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="model.html">Model</a>
+        <a href="impact.html" class="active">Impact Tool</a>
+        <a href="about.html">Who We Are</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero shallow">
+      <div class="container">
+        <p class="eyebrow">IMPACT TOOL</p>
+        <h1>Visualizing OceanFlow's impact</h1>
+        <p class="section-lead max-720">A visual tool to help you understand OceanFlow's value proposition. <br>Note: This is a simplified tool.</p>
+      </div>
+    </section>
+
+    <section class="container section reveal">
+      <div class="impact-layout">
+        <div class="impact-controls glass">
+          <div class="control-block">
+            <label for="facilitySize">Facility size</label>
+            <input type="range" id="facilitySize" min="20" max="200" value="80" step="10">
+            <div class="control-meta"><span>Smaller site</span><strong id="facilitySizeValue">80 MW</strong><span>Larger site</span></div>
+          </div>
+          <div class="control-block">
+            <label for="waterStress">Local freshwater stress</label>
+            <input type="range" id="waterStress" min="1" max="5" value="3" step="1">
+            <div class="control-meta"><span>Low</span><strong id="waterStressValue">Medium</strong><span>High</span></div>
+          </div>
+          <div class="control-block">
+            <label for="coolingShift">How much cooling shifts to OceanFlow</label>
+            <input type="range" id="coolingShift" min="10" max="100" value="60" step="5">
+            <div class="control-meta"><span>Low use</span><strong id="coolingShiftValue">60%</strong><span>High use</span></div>
+          </div>
+        </div>
+
+        <div class="impact-results glass">
+          <div class="results-top">
+            <div>
+              <p class="eyebrow small">SCENARIO SUMMARY</p>
+              <h2 id="scenarioTitle">Medium coastal AI facility</h2>
+            </div>
+            <div class="mini-badge" id="scenarioBadge">Balanced deployment</div>
+          </div>
+
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <span class="metric-label">Water pressure relief</span>
+              <strong id="waterRelief">52%</strong>
+              <p>Estimated reduction in freshwater dependency pressure</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Cooling advantage</span>
+              <strong id="coolingAdvantage">34%</strong>
+              <p>Illustrative improvement in cooling support effectiveness</p>
+            </div>
+            <div class="metric-card wide">
+              <span class="metric-label">Takeaway</span>
+              <strong id="takeawayText">OceanFlow looks most valuable where facility demand is meaningful and freshwater pressure is real.</strong>
+            </div>
+          </div>
+
+          <div class="chart-card">
+            <canvas id="impactChart" width="900" height="420" aria-label="Impact comparison chart"></canvas>
+          </div>
+
+          <div class="result-explainer" id="resultExplainer">
+            In this scenario, OceanFlow creates the biggest story through reduced freshwater dependence while also improving the cooling profile of a larger AI facility.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section reveal">
+      <div class="cta-band glass">
+        <div>
+          <p class="eyebrow">NEXT PAGE</p>
+          <h2>Meet the team and the mission.</h2>
+          <p>Go to Who We Are for the brand story, the values, and the people behind OceanFlow.</p>
+        </div>
+        <a href="about.html" class="btn">Go to Who We Are</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

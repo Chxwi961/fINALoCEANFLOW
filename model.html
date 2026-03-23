@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OceanFlow | Model</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand"><span class="brand-mark"></span><span>OceanFlow</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="model.html" class="active">Model</a>
+        <a href="impact.html">Impact Tool</a>
+        <a href="about.html">Who We Are</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero shallow">
+      <div class="container">
+        <p class="eyebrow">MODEL PAGE</p>
+        <h1>How OceanFlow works</h1>
+        <p class="section-lead max-720">What the problem is, what our solution is, and how the open loop works in practice.</p>
+      </div>
+    </section>
+
+    <section class="container section reveal">
+      <div class="section-heading compact">
+        <p class="eyebrow">1. THE PROBLEM</p>
+        <h2>Data centers need stronger cooling without leaning so hard on freshwater.</h2>
+      </div>
+      <div class="grid-2 problem-grid">
+        <article class="info-card glass">
+          <h3>Traditional pressure points</h3>
+          <ul class="clean-list">
+            <li>AI hardware generates intense heat loads</li>
+            <li>Air-heavy cooling becomes less effective at high density</li>
+            <li>Freshwater use is becoming costly and controversial</li>
+          </ul>
+        </article>
+        <article class="info-card glass emphasis-card">
+          <h3>What operators need</h3>
+          <p>A system that is scalable, easier to defend environmentally, and more aligned with long-term AI infrastructure demand.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section reveal">
+      <div class="section-heading compact">
+        <p class="eyebrow">2. THE SOLUTION</p>
+        <h2>OceanFlow turns seawater into a cooling advantage.</h2>
+        <p class="section-lead">Click through the system blocks below for an explanation of the concept.</p>
+      </div>
+
+      <div class="interactive-system glass">
+        <div class="system-buttons" id="systemButtons">
+          <button class="sys-btn active" data-system="intake">1. Intake</button>
+          <button class="sys-btn" data-system="filter">2. Filtration</button>
+          <button class="sys-btn" data-system="exchange">3. Heat Exchange</button>
+          <button class="sys-btn" data-system="loop">4. Internal Loop</button>
+          <button class="sys-btn" data-system="return">5. Return / Control</button>
+        </div>
+        <div class="system-display">
+          <div class="system-visual" id="systemVisual">
+            <div class="visual-track"></div>
+            <div class="visual-node active" data-system="intake">Ocean</div>
+            <div class="visual-node" data-system="filter">Filter</div>
+            <div class="visual-node" data-system="exchange">Exchanger</div>
+            <div class="visual-node" data-system="loop">Servers</div>
+            <div class="visual-node" data-system="return">Return</div>
+          </div>
+          <div class="system-copy" id="systemCopy">
+            <h3>Seawater intake</h3>
+            <p>Ocean water is brought into the system from a coastal source so it can help absorb and move heat more efficiently.</p>
+            <p class="muted">Main idea: use location as an infrastructure advantage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section reveal">
+      <div class="section-heading compact">
+        <p class="eyebrow">3. THE FLOW</p>
+        <h2>Step-by-step summary of our solution</h2>
+      </div>
+      <div class="timeline clean-timeline">
+        <div class="timeline-item glass"><div class="timeline-step">1</div><div><h3>Water enters</h3><p>Seawater is drawn in from a coastal location.</p></div></div>
+        <div class="timeline-item glass"><div class="timeline-step">2</div><div><h3>Water is cleaned</h3><p>Filtration helps manage sand, sediment, and particulates.</p></div></div>
+        <div class="timeline-item glass"><div class="timeline-step">3</div><div><h3>Heat is transferred</h3><p>A corrosion-resistant exchanger moves heat away without exposing servers directly to seawater.</p></div></div>
+        <div class="timeline-item glass"><div class="timeline-step">4</div><div><h3>Servers stay cooler</h3><p>The internal loop supports more stable operation in high-density computing environments.</p></div></div>
+        <div class="timeline-item glass"><div class="timeline-step">5</div><div><h3>Water is managed responsibly</h3><p>Return or discharge is controlled to fit thermal and environmental safeguards.</p></div></div>
+      </div>
+    </section>
+
+    <section class="container section reveal">
+      <div class="cta-band glass">
+        <div>
+          <p class="eyebrow">NEXT PAGE</p>
+          <h2>See what the value could look like.</h2>
+          <p>Open the Impact Tool to test a simple deployment scenario and visualize the potential effect.</p>
+        </div>
+        <a href="impact.html" class="btn">Open Impact Tool</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
