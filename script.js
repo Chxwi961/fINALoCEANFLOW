@@ -173,7 +173,7 @@ if (facilitySize && waterStress && coolingShift) {
     refs.scenarioTitle.textContent = getScenario(size);
     refs.scenarioBadge.textContent = getBadge(overallScore);
 
-    let takeaway = "OceanFlow's cooling advantages scale with your data center.";
+    let takeaway = "OceanFlow's cooling advantages scale alongside your data center's growth.";
   
     refs.takeawayText.textContent = takeaway;
 
